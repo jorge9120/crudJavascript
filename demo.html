@@ -1,0 +1,64 @@
+<!--
+
+This is a Tutoralzine Demo 
+Original tutorial: A simple AJAX website with jQuery
+Tutorial URL: http://tutorialzine.com/2009/09/simple-ajax-website-jquery/
+
+You are free to use the following demo code for any purpose you see fit.
+
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>A simple AJAX website with jQuery</title>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="demo.css" />
+</head>
+
+<body>
+
+<div id="rounded">
+<img src="img/top_bg.gif" alt="top" /><div id="main" class="container">
+    <h1>CRUD PERSONAS</h1>
+    
+   
+    
+    <div class="clear"></div>
+    
+    <div id="pageContent">
+
+        <h1>DATOS</h1> 
+        <form  name="formGeneral" method="POST" id="formGeneral">
+            <p>
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <label>Apellido:</label>
+                    <input type="text" name="apellido" id="apellido">
+                    <label>Direccion:</label>
+                    <input type="text" name="direccion" id="direccion">
+                    <input type="hidden" name="idUsuario" id="idUsuario">
+            </p>
+            
+            
+            <div style="text-align: center;"> <br><input type="button" class="btn btn-dark" value="Guardar" name="Guardar" id="guardar" ></div>
+            <div style="text-align: center;"> <br><input type="button"  class="btn btn-dark" value="Modifcar" name="Modificar" id="modificar" ></div>
+           
+        </form>
+    
+    </div>
+    <div id="tablaListado"></div>
+    </div>
+    <div class="clear"></div>
+<img src="img/bottom_bg.gif" alt="bottom" /></div>
+
+<div align="center" class="demo">
+this is a <a href="http://tutorialzine.com/" target="_blank">tutorialzine</a> demo</div>
+
+</body>
+</html>
